@@ -1,0 +1,68 @@
+/* Hintergrund mit Pokémon Bild */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Comic Sans MS', cursive;
+  background: url('https://c4.wallpaperflare.com/wallpaper/752/825/65/nature-pokemon-wallpaper-preview.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  user-select: none;
+}
+
+canvas {
+  display: block;
+  background: transparent;
+}
+
+#hud {
+  position: fixed;
+  top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 20px;
+  padding: 0 20px;
+  text-shadow: 2px 2px 5px black;
+  z-index: 10;
+}
+
+#gameOverScreen {
+  display: none;
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 30px 40px;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  z-index: 20;
+  font-size: 22px;
+}
+
+#gameOverScreen h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #ff4444;
+  text-shadow: 2px 2px 3px black;
+}
+
+#gameOverScreen button {
+  margin-top: 20px;
+  font-size: 22px;
+  padding: 10px 30px;
+  border-radius: 15px;
+  background: #ffcc00;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+#gameOverScreen button:hover {
+  background: #ffaa00;
+}
